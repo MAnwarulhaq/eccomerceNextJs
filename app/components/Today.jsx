@@ -109,7 +109,7 @@ useEffect(() => {
                     >
                         <GoArrowLeft className='text-lg'/>
                     </div>
-                    <div className='size-8 bg-gray-200 rounded-full flex justify-center items-center cursor-pointer'
+                    <div className='size-8 bg-gray-200 rounded-full flex justify-center items-center curp'
                     onClick={nextItem}
                     >
                         <GoArrowRight   className='text-lg'/>

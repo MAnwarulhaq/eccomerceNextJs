@@ -4,6 +4,9 @@ import Image from "next/image"
 import { FaStar } from "react-icons/fa6";
 import { addToCart } from "../store/slice/Cartslice";
 import { useDispatch } from "react-redux";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { IoEyeOutline } from "react-icons/io5";
+import Link from "next/link";
 
 export default function Product({ id, productname, image, newprice, oldprice, discount }) {
     const dispatch = useDispatch()
@@ -32,6 +35,24 @@ export default function Product({ id, productname, image, newprice, oldprice, di
                     height={80}
                     className=" w-full h-full object-contain"
                 />
+                <div className=' absolute top-5 right-2 space-y-3  '>
+                    <div className=' bg-[#ffff] size-8 flex justify-center items-center rounded-full '>
+                        <button
+                            // onClick={handleaddtowishlist}
+                        >
+                            <IoMdHeartEmpty className='text-lg  cursor-pointer hover:text-red-500' />
+                        </button>
+
+                    </div>
+                    <div className=' bg-[#ffff] size-8 flex justify-center items-center rounded-full '>
+                        
+                            <IoEyeOutline className=' text-lg cursor-pointer hover:text-blue-500' />
+                        
+                    </div>
+
+
+
+                </div>
                 <button
                     onClick={handleAddtoCart}
                     className="absolute bottom-0 w-full bg-black text-white h-10 border-b rounded-b font-semibold cursor-pointer block sm:opacity-0 sm:group-hover:opacity-100 sm:transition-opacity sm:duration-300
@@ -40,6 +61,7 @@ export default function Product({ id, productname, image, newprice, oldprice, di
                     Add to Cart
                 </button>
             </div>
+            <Link href={`/productdetail?id=${id}`}>
             <div className=' space-y-2 h-30 p-3'>
                 <h1 className='font-semibold'>{productname} </h1>
                 <div className='flex justify-start items-center gap-3'>
@@ -62,6 +84,7 @@ export default function Product({ id, productname, image, newprice, oldprice, di
               />
           </div> */}
             </div>
+            </Link>
         </div>
     )
 }
