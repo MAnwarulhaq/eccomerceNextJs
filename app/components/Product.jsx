@@ -25,7 +25,7 @@ export default function Product({ id, productname, image, newprice, oldprice, di
     }
 
     return (
-        <div key={id} className=" w-65 h-auto bg-[#ffff] shadow ">
+        <div key={id} className="  h-auto bg-[#ffff] shadow ">
 
             <div className=" relative group flex justify-center items-center bg-gray-200 p-2 h-50">
                 <Image

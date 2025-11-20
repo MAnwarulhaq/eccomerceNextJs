@@ -12,7 +12,7 @@ export default function HeroSection() {
 
     const [index, setIndex] = useState(0)
     return (
-        <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-12 md:h-[400px] gap-5 mb-20 border">
+        <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-12 md:h-[400px] gap-5 mb-20 ">
             <div className='order-2 md:order-1 col-span-12 md:col-span-3 md:pl-5   flex justify-center md:justify-start items-center md:items-start md:border-r md:border-gray-300 '>
                 <ul className="space-y-5 font-[Poppins] text-sm flex  flex-col justify-start items-start mt-5 ">
                     <li className="flex gap-5 ">
@@ -33,7 +33,7 @@ export default function HeroSection() {
 
 
             <div className='relative  order-1 md:order-2 col-span-12 md:col-span-9  bg-black  grid grid-cols-1  md:grid-cols-2     '>
-                <div className='  order-2 md:order-1 flex justify-center items-center border'>
+                <div className='  order-2 md:order-1 flex justify-center items-center'>
                     <div className='  text-white space-y-2 md:space-y-5 flex flex-col justify-center md:justify-start items-center md:items-start mb-3'>
                         <Image
                             src="/images/Frame.png"
@@ -62,7 +62,7 @@ export default function HeroSection() {
                     </div>
 
                 </div>
-                <div className='order-1 md:order-2 border border-amber-600 flex items-center justify-center'>
+                <div className='order-1 md:order-2  flex items-center justify-center'>
                     <Image
                         src="/images/hero.png"
                         alt="Hero"

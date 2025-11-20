@@ -119,7 +119,7 @@ useEffect(() => {
                  
                
             </div>
-            <div className='flex flex-wrap justify-center md:justify-between items-center gap-3 mt-5'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3 mt-5'>
            
                     {
                         visebileProduct.map((item)=>{
