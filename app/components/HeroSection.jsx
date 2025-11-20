@@ -32,7 +32,7 @@ export default function HeroSection() {
             </div>
 
 
-            <div className='relative  order-1 md:order-2 col-span-12 md:col-span-9  bg-black  grid grid-cols-1  md:grid-cols-2     '>
+            <div className='relative  order-1 md:order-2 col-span-12 md:col-span-9  bg-black  grid grid-cols-1  md:grid-cols-2   mt-5  '>
                 <div className='  order-2 md:order-1 flex justify-center items-center'>
                     <div className='  text-white space-y-2 md:space-y-5 flex flex-col justify-center md:justify-start items-center md:items-start mb-3'>
                         <Image

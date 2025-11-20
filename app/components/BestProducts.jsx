@@ -23,8 +23,8 @@ export default function BestProductds(){
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <p className="font-semibold text-2xl md:text-5xl">Best Selling Products</p>
-                <div className="flex justify-center items-center">
-                    <button className="bg-red-500 text-white w-40 h-12">View All</button>
+                <div className="flex justify-center md:justify-end items-center md:items-end">
+                    <button className="bg-red-500 text-white w-40 h-12 cursor-pointer">View All</button>
                 </div>
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-3 mt-5'>

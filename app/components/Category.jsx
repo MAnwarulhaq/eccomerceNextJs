@@ -21,7 +21,7 @@ export default function Category() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5  ">
                 <p className='font-semibold text-2xl md:text-3xl'>Browse By Category</p>
-                <div className=' flex justify-center items-center gap-3'>
+                <div className=' flex justify-center md:justify-end items-center md:items-end gap-3'>
                     <div className='size-8 bg-gray-200 rounded-full flex justify-center items-center cursor-pointer'
                         // onClick={prevItem}
                     >

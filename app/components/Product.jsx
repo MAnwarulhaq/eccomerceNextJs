@@ -31,9 +31,9 @@ export default function Product({ id, productname, image, newprice, oldprice, di
                 <Image
                     src={image}
                     alt={productname}
-                    width={80}
-                    height={80}
-                    className=" w-full h-full object-contain"
+                    width={150}
+                    height={150}
+                    className=" h-40 object-contain"
                 />
                 <div className=' absolute top-5 right-2 space-y-3  '>
                     <div className=' bg-[#ffff] size-8 flex justify-center items-center rounded-full '>

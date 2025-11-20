@@ -8,7 +8,7 @@ import { useSelector } from "react-redux"
 
 export default function Navbar() {
   const cartCount = useSelector((state) => state.cart.items.reduce((total, item) => total + item.qty, 0));
-  return(
+  return (
     <nav className="flex justify-around items-center  py-4 bg-[#ffff] shadow border-b border-gray-300">
       <h1 className="text-2xl font-bold">Exclusive</h1>
 
@@ -51,7 +51,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className=" lg:hidden text-2xl">
-    <RxHamburgerMenu />
+        <RxHamburgerMenu />
       </div>
     </nav>
   )
