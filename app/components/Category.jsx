@@ -19,7 +19,7 @@ export default function Category() {
                 <div className="w-7 h-15 rounded bg-red-500"></div>
                 <h1 className="text-red-500 text-2xl font-semibold">Categories</h1>
             </div>
-            <div className="flex flex-wrap justify-center md:justify-between items-center gap-5  ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5  ">
                 <p className='font-semibold text-2xl md:text-3xl'>Browse By Category</p>
                 <div className=' flex justify-center items-center gap-3'>
                     <div className='size-8 bg-gray-200 rounded-full flex justify-center items-center cursor-pointer'

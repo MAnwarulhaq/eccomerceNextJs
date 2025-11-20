@@ -66,9 +66,9 @@ export default function HeroSection() {
                     <Image
                         src="/images/hero.png"
                         alt="Hero"
-                        width={200}
-                        height={200}
-                        className=" w-[500px] h-80"
+                        width={900}
+                        height={900}
+                        className=""
                     />
                 </div>
 

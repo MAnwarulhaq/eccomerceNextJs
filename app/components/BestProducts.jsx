@@ -21,13 +21,13 @@ export default function BestProductds(){
                 <div className="w-7 h-15 rounded bg-red-500"></div>
                 <h1 className="text-red-500 text-2xl font-semibold">This Month</h1>
             </div>
-            <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-5">
-                <p className="font-semibold text-2xl~ md:text-3xl">Best Selling Products</p>
-                <div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <p className="font-semibold text-2xl md:text-5xl">Best Selling Products</p>
+                <div className="flex justify-center items-center">
                     <button className="bg-red-500 text-white w-40 h-12">View All</button>
                 </div>
             </div>
-            <div className='flex flex-wrap justify-center md:justify-between items-center gap-3 mt-5'>
+            <div className='grid grid-cols-1 sm:grid-cols-2  xl:grid-cols-4 gap-3 mt-5'>
                        
                                 {
                                     products.map((item)=>{

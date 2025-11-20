@@ -7,7 +7,7 @@ export default function Banner() {
             <div className='flex  justify-center items-center'>
                 <div className="space-y-4 flex flex-col justify-center md:justify-start items-center md:items-start md:text-left">
                     <p className='text-[#00FF66] font-semibold ' >Categories</p>
-                    <div className='text-white text-2xl md:text-5xl'>
+                    <div className='text-white text-2xl xl:text-5xl'>
                         <p>Enhance Your </p>
                         <p>Music Experience</p>
                     </div>
