@@ -6,6 +6,7 @@ import Today from "./components/Today";
 import Category from "./components/Category";
 import BestProductds from "./components/BestProducts";
 import Banner from "./components/Banner";
+import OurProducts from "./components/OurProducts";
 export default function Home() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function Home() {
     <Category/>
     <BestProductds/>
     <Banner/>
+    <OurProducts/>
     </>
   );
 }
