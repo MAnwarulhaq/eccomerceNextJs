@@ -3,6 +3,7 @@ import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import { CiCamera, CiHeadphones, CiMobile4, CiMonitor } from "react-icons/ci";
 import { IoWatchOutline } from 'react-icons/io5';
 import { VscGame } from 'react-icons/vsc';
+import { useState } from 'react';
 
 export default function Category() {
       const category = [
@@ -12,7 +13,15 @@ export default function Category() {
         { icon: <CiCamera />, heading: "Camera" },
         { icon: <CiHeadphones />, heading: "HeadPhones" },
         { icon: <VscGame />, heading: "Gaming" },
+         { icon: <CiMobile4 />, heading: "Phones" },
+           { icon: <CiCamera />, heading: "Camera" },
     ]
+
+    const [startIndex,setStartIndex] = useState(0)
+    const [display,setDisplay] = useState(6)
+
+    const dispalyCategory = category.slice(startIndex,display)
+
     return (
         <div className="w-[90%] mx-auto my-10 space-y-5">
             <div className="flex items-center  gap-4">
@@ -38,7 +47,7 @@ export default function Category() {
             </div>
              <div className='grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-6 gap-5'>
 
-                {category.map((item, index) => (
+                {dispalyCategory.map((item, index) => (
                     <div key={index} className="border border-gray-300 rounded flex flex-col justify-center items-center w-full   h-40 hover:bg-red-500 hover:text-white  cursor-pointer space-y-5">
                         <div className='text-3xl'> {item.icon}</div>
                         <p>{item.heading}</p>
