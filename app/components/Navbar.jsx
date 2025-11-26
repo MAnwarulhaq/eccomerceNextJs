@@ -9,7 +9,7 @@ import { useSelector } from "react-redux"
 export default function Navbar() {
   const cartCount = useSelector((state) => state.cart.items.reduce((total, item) => total + item.qty, 0));
   return (
-    <nav className="flex justify-around items-center  py-4 bg-[#ffff] shadow border-b border-gray-300">
+    <nav className="flex justify-around items-center  py-4 bg-[#ffff] shadow border-b border-gray-300 sticky top-0 z-50">
       <h1 className="text-2xl font-bold">Exclusive</h1>
 
       <ul className="hidden lg:flex justify-between text-lg gap-6">

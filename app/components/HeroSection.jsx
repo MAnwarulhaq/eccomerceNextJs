@@ -16,21 +16,21 @@ export default function HeroSection() {
             <div className='order-2 md:order-1 col-span-12 md:col-span-3 md:pl-5   flex justify-center md:justify-start items-center md:items-start md:border-r md:border-gray-300 '>
                 <ul className="space-y-5 font-[Poppins] w-40 text-sm flex  flex-col justify-start items-start mt-5  ">
                     <li className="flex  justify-between items-center w-full  ">
-                        <div>Women's Fashion</div>
+                        <div className='cursor-pointer'>Women's Fashion</div>
                         <div><IoIosArrowForward /></div> 
                     </li>
-                    <li className="flex  justify-between items-center w-full ">
+                    <li className="flex cursor-pointer  justify-between items-center w-full ">
                         <div>Men's Fashion</div> 
                         <div><IoIosArrowForward /></div>
                         
                     </li>
-                    <li>Electronics</li>
-                    <li>Home & Lifestyle</li>
-                    <li>Medicine</li>
-                    <li>Sports & Outdoor</li>
-                    <li>Baby’s & Toys</li>
-                    <li>Groceries & Pets</li>
-                    <li>Health & Beauty</li>
+                    <li className='cursor-pointer'>Electronics</li>
+                    <li className='cursor-pointer'>Home & Lifestyle</li>
+                    <li className='cursor-pointer'>Medicine</li>
+                    <li className='cursor-pointer'>Sports & Outdoor</li>
+                    <li className='cursor-pointer'>Baby’s & Toys</li>
+                    <li className='cursor-pointer'>Groceries & Pets</li>
+                    <li className='cursor-pointer'>Health & Beauty</li>
                 </ul>
             </div>
 
