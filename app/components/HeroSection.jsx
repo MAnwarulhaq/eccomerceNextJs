@@ -14,12 +14,15 @@ export default function HeroSection() {
     return (
         <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-12 md:h-[400px] gap-5 mb-20 ">
             <div className='order-2 md:order-1 col-span-12 md:col-span-3 md:pl-5   flex justify-center md:justify-start items-center md:items-start md:border-r md:border-gray-300 '>
-                <ul className="space-y-5 font-[Poppins] text-sm flex  flex-col justify-start items-start mt-5 ">
-                    <li className="flex gap-5 ">
-                        <span>Women's Fashion</span> <IoIosArrowForward />
+                <ul className="space-y-5 font-[Poppins] w-40 text-sm flex  flex-col justify-start items-start mt-5  ">
+                    <li className="flex  justify-between items-center w-full  ">
+                        <div>Women's Fashion</div>
+                        <div><IoIosArrowForward /></div> 
                     </li>
-                    <li className="flex gap-5 ">
-                        <span>Men's Fashion</span> <IoIosArrowForward />
+                    <li className="flex  justify-between items-center w-full ">
+                        <div>Men's Fashion</div> 
+                        <div><IoIosArrowForward /></div>
+                        
                     </li>
                     <li>Electronics</li>
                     <li>Home & Lifestyle</li>

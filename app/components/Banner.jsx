@@ -5,7 +5,7 @@ export default function Banner() {
     return (
         <div className="w-[90%] mx-auto h-auto md:h-[400px] my-10  grid grid-cols-1 md:grid-cols-2 bg-black p-5 space-y-4">
             <div className='flex  justify-center items-center'>
-                <div className="space-y-4 flex flex-col justify-center md:justify-start items-center md:items-start md:text-left">
+                <div className="space-y-7 flex flex-col justify-center md:justify-start items-center md:items-start md:text-left">
                     <p className='text-[#00FF66] font-semibold ' >Categories</p>
                     <div className='text-white text-2xl xl:text-5xl'>
                         <p>Enhance Your </p>
