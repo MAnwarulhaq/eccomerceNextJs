@@ -3,7 +3,7 @@ import { GoArrowLeft, GoArrowRight } from 'react-icons/go';
 import { CiCamera, CiHeadphones, CiMobile4, CiMonitor } from "react-icons/ci";
 import { IoWatchOutline } from 'react-icons/io5';
 import { VscGame } from 'react-icons/vsc';
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 
 export default function Category() {
     const category = [
@@ -20,18 +20,44 @@ export default function Category() {
     const [startIndex, setStartIndex] = useState(0)
     const [display, setDisplay] = useState(6)
 
-    const displayCategory = category.slice(startIndex, startIndex+display)
+    const displayCategory = category.slice(startIndex, startIndex + display)
 
-    function nextCat (){
-        if(startIndex+display < category.length){
-            setStartIndex(prev => prev +1)
+
+
+    function nextCat() {
+        if (startIndex + display < category.length) {
+            setStartIndex(prev => prev + 1)
         }
     }
-    function prevCat (){
-        if(startIndex > 0){
+    function prevCat() {
+        if (startIndex > 0) {
             setStartIndex(prev => prev - 1)
         }
     }
+
+    useEffect(() => {
+        const handleResize = () => {
+            const width = window.innerWidth;
+
+            if (width >= 1024) {
+                setDisplay(6);
+            } else if (width >= 640) {
+                setDisplay(3);
+            } else {
+                setDisplay(1);
+            }
+        };
+
+
+        handleResize();
+
+
+        window.addEventListener("resize", handleResize);
+
+
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
 
 
 
@@ -45,12 +71,12 @@ export default function Category() {
                 <p className='font-semibold text-2xl md:text-3xl'>Browse By Category</p>
                 <div className=' flex justify-center md:justify-end items-center md:items-end gap-3'>
                     <div className='size-8 bg-gray-200 rounded-full flex justify-center items-center cursor-pointer'
-                    onClick={prevCat}
+                        onClick={prevCat}
                     >
                         <GoArrowLeft className='text-lg' />
                     </div>
                     <div className='size-8 bg-gray-200 rounded-full flex justify-center items-center cursor-pointer'
-                    onClick={nextCat}
+                        onClick={nextCat}
                     >
                         <GoArrowRight className='text-lg' />
 
