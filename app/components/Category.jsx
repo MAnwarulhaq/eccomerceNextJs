@@ -47,14 +47,8 @@ export default function Category() {
                 setDisplay(1);
             }
         };
-
-
         handleResize();
-
-
         window.addEventListener("resize", handleResize);
-
-
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
@@ -92,13 +86,6 @@ export default function Category() {
                         <p>{item.heading}</p>
                     </div>
                 ))}
-
-
-
-
-
-
-
 
             </div>
             <hr className='mt-10 text-gray-300' />
