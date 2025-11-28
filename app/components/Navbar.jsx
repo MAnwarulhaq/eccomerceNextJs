@@ -9,10 +9,11 @@ import { useSelector } from "react-redux"
 export default function Navbar() {
   const cartCount = useSelector((state) => state.cart.items.reduce((total, item) => total + item.qty, 0));
   return (
-    <nav className="flex justify-around items-center  py-4 bg-[#ffff] shadow border-b border-gray-300 sticky top-0 z-50">
+    <div className="bg-[#ffff]  shadow border-b border-gray-300 sticky top-0 z-50">
+    <nav className="w-[90%] mx-auto grid grid-cols-3  py-4 ">
       <h1 className="text-2xl font-bold">Exclusive</h1>
 
-      <ul className="hidden lg:flex justify-between text-lg gap-6">
+      <ul className="hidden lg:flex justify-between text-lg gap-6 ">
         <li><Link href="/">Home</Link></li>
         <li><Link href="/about">About</Link></li>
         <li><Link href="/contact">Contact</Link></li>
@@ -20,7 +21,7 @@ export default function Navbar() {
 
       </ul>
 
-      <div className="hidden lg:flex items-center gap-5">
+      <div className="hidden lg:flex items-end justify-end gap-5 ">
         <div className="relative bg-gray-100 rounded-lg overflow-hidden">
           <input
             type="text"
@@ -50,9 +51,10 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      <div className=" lg:hidden text-2xl">
+      {/* <div className="block lg:hidden text-2xl">
         <RxHamburgerMenu />
-      </div>
+      </div> */}
     </nav>
+    </div>
   )
 }
