@@ -10,7 +10,7 @@ export default function Navbar() {
   const cartCount = useSelector((state) => state.cart.items.reduce((total, item) => total + item.qty, 0));
   return (
     <div className="bg-[#ffff]  shadow border-b border-gray-300 sticky top-0 z-50">
-    <nav className="w-[90%] mx-auto grid grid-cols-3  py-4 ">
+    <nav className="w-[90%] mx-auto grid grid-cols-2 lg:grid-cols-3  py-4 ">
       <h1 className="text-2xl font-bold">Exclusive</h1>
 
       <ul className="hidden lg:flex justify-between text-lg gap-6 ">
@@ -51,9 +51,9 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-      {/* <div className="block lg:hidden text-2xl">
+      <div className=" lg:hidden text-2xl flex justify-end items-end">
         <RxHamburgerMenu />
-      </div> */}
+      </div>
     </nav>
     </div>
   )
