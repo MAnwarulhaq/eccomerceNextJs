@@ -14,7 +14,7 @@ export default function HeroSection() {
     return (
         <div className="w-[90%] mx-auto grid grid-cols-1 md:grid-cols-12 md:h-[400px] gap-5 mb-20 ">
             <div className='order-2 md:order-1 col-span-12 md:col-span-3 md:pl-5   flex justify-center md:justify-start items-center md:items-start md:border-r md:border-gray-300 '>
-                <ul className="space-y-5 font-[Poppins] w-40 text-sm flex  flex-col justify-start items-start mt-5  ">
+                <ul className="space-y-5 font-[Poppins]  text-sm flex  flex-col justify-start items-start mt-5  ">
                     <li className="flex  justify-between items-center w-full  ">
                         <div className='cursor-pointer'>Women's Fashion</div>
                         <div><IoIosArrowForward /></div> 
@@ -65,13 +65,13 @@ export default function HeroSection() {
                     </div>
 
                 </div>
-                <div className='order-1 md:order-2  flex items-center justify-center'>
+                <div className='order-1 md:order-2  h-[380px]'>
                     <Image
                         src="/images/hero.png"
                         alt="Hero"
                         width={900}
                         height={900}
-                        className=""
+                        className="w-full h-full"
                     />
                 </div>
 
